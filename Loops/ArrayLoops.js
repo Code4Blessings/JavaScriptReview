@@ -24,7 +24,6 @@ const greekGodStudents = [
     },
 ];
 
-addedArray = {}
 
 for(let i=0; i < greekGodStudents.length; i++) {
     let student = greekGodStudents[i];
