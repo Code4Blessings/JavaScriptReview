@@ -66,17 +66,17 @@ console.log(isPangram('The five boxing wizards jump quick'))
 //---clubs,spades,hearts,diamonds
 //Return both in an object
 
-//Will pick a random value from an array(by the index)
+//Will pick a random value from an array(by the index) but since random will return a decimal from 0 - 1, we multiply it by its length.  To get rid of the decimal, we wrap the random function with Math.floor.
 function getCard() {
     //Pick a random value from:
 //---A,2,3,4,5,6,7,8,9,10,J,Q,K,
-    values = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K']
+    values = ['A','2',3,4,5,6,7,8,9,10,'J','Q','K']
     suits = ['clubs','spades','hearts','diamonds']
     valCard = values[Math.floor(Math.random() * values.length)]
     //Pick a random suit from:
 //---clubs,spades,hearts,diamonds
     suitCard = suits[Math.floor(Math.random() * suits.length)]
-    return {value: `${valCard}`, suit: `${suitCard}`}
+    return {value: valCard, suit: suitCard}
 }
 
 console.log(getCard());
