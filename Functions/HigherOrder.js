@@ -76,4 +76,17 @@ function pickOne(f1, f2) {
 
 console.log(pickOne(happy, meet));
 
-//Returning Functions
+
+//Returning A Function from Within a Function
+
+function multiplyBy(num) {
+    return function(x) {
+        return x * num
+    }
+}
+
+const triple = multiplyBy(3)
+const double = multiplyBy(2)
+
+console.log(triple(4)) //12
+console.log(double(4)) //8

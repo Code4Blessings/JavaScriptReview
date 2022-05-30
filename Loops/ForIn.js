@@ -1,5 +1,6 @@
 //For In Loop - will loop over the keys, the properties in an object.
 
+
 const jeopardyWinnings = {
     regularPlay: 2522700,
     watsonChallenge: 300000,
