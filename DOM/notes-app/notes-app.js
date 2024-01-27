@@ -11,3 +11,11 @@ ps.forEach((p) => {
     p.textContent= '********'
     //p.remove()
 })
+
+//Add a new element
+
+const newP = document .createElement('p')
+
+newP.textContent = 'This is a new element from JS'
+
+document.querySelector('body').appendChild(newP)
